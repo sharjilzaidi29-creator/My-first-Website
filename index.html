@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civil Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                opacity: 0.9;
+            }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #2a5298;
+                font-weight: 600;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ff7a18;
+                }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+            .about img {
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            color: #1e3c72;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+            .skill-box:hover {
+                transform: translateY(-10px);
+            }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project {
+            background: linear-gradient(135deg, #ff7a18, #ffb347);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: white;
+            border-radius: 30px;
+            padding: 50px;
+        }
+
+            .contact p {
+                margin: 10px 0;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Md. Sharjil Zaidi</h1>
+        <p>Civil Engineer | Future Data & Tech Professional</p>
+    </header><nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav><section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <div>
+                <p>
+                    I am a Civil Engineering student with strong interest in structural design,
+                    construction management, and modern technology. I enjoy creating practical
+                    solutions for real-world infrastructure problems and continuously learning
+                    new tools that enhance engineering efficiency.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Civil Engineering">
+        </div>
+    </section><section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-box">AutoCAD</div>
+            <div class="skill-box">STAAD Pro</div>
+            <div class="skill-box">ETABS</div>
+            <div class="skill-box">Quantity Surveying</div>
+            <div class="skill-box">Construction Planning</div>
+            <div class="skill-box">MS Excel</div>
+        </div>
+    </section><section id="projects">
+        <h2>Academic & Practical Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Bridge Design Project</h3>
+                <p>
+                    Design and analysis of a river bridge considering load combinations,
+                    safety, and economy.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Soil Stabilization Study</h3>
+                <p>
+                    Experimental study on soil stabilization using natural fibers
+                    for sustainable construction.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Internship – Construction Site</h3>
+                <p>
+                    Hands-on experience in residential and commercial building projects
+                    including supervision and estimation.
+                </p>
+            </div>
+        </div>
+    </section><section id="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: yourmail@example.com</p>
+            <p>Phone: +91 XXXXXXXXXX</p>
+            <p>Location: Maharashtra, India</p>
+        </div>
+    </section><footer>
+        <p>
